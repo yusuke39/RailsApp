@@ -1,0 +1,19 @@
+<h1>Cards#index</h1>
+<p>現在登録されているカード一覧です。</p>
+<table width="100%">
+  <tr>
+    <th>ID</th>
+    <th>タイトル</th>
+    <th>著者</th>
+  </tr>
+  <% @cards.each do |card| %>
+    <tr>
+      <td width="35px"><%= card.id %></td>
+      <td width="50%"><a href="/cards/<%= card.id%>"><%= card.title %></a></td>
+      <td><%= card.author %></td>
+      <td width="40px"><a href="/cards/edit/<%= card.id %>">編集</a></td>
+      <td width="40px"><a href="javascript:window.delData(<%= (card.id.to_s + ", '".to_s + card.title.to_s).html_safe %>');" >削除</a></td>
+    </tr>
+  <% end %>
+</table>
+<p class="link"><a href="/cards/add">新しいデーターを入力</a></p>
