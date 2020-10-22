@@ -12,7 +12,7 @@
       <td width="50%"><a href="/cards/<%= card.id%>"><%= card.title %></a></td>
       <td><%= card.author %></td>
       <td width="40px"><a href="/cards/edit/<%= card.id %>">編集</a></td>
-      <td width="40px"><a href="javascript:window.delData(<%= (card.id.to_s + ", '".to_s + card.title.to_s).html_safe %>');" >削除</a></td>
+      <td width="40px"><a href="/cards/delete/<%= card.id %>">削除</a></td>
     </tr>
   <% end %>
 </table>

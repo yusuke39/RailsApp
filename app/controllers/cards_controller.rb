@@ -26,7 +26,7 @@ class CardsController < ApplicationController
   end
 
   def delete 
-    Card.find(params[:id]).destroy
+    Card.find(params[:id]).delete
     goback
   end
 
