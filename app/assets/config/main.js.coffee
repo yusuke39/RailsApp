@@ -1,0 +1,2 @@
+s = @SimpleNote
+s.Models ?= {}
