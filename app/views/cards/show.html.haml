@@ -1,0 +1,21 @@
+%h1 Cards#show
+%p= @card.title
+%table
+  %tr
+    %th Id
+    %td= @card.id
+  %tr
+    %th タイトル
+    %td= @card.title
+  %tr
+    %th 著者
+    %td= @card.author
+  %tr
+    %th 価格
+    %td= @card.price
+  %tr
+    %th 出版社
+    %td= @card.publisher
+  %tr
+    %th コメント
+    %td= @card.memo

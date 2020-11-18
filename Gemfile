@@ -58,3 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # backbone.jsのgem
 gem 'rails-assets-lodash'
 gem 'rails-assets-backbone'
+
+gem 'haml-rails'
+gem 'erb2haml'
