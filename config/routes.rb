@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :people
+  get 'people/index'
   get 'cards/index'
   get 'cards', to: 'cards#index'
 
