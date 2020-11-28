@@ -1,5 +1,13 @@
-%h1 People#index
-%p Find me in app/views/people/index.html.erb
+%html
+  %body
+    %h1= @msg
 
-= @data.each do |people|
-  %p= people.name 
+%table
+  - @people.each do | people |
+    %tr
+      %td= people.id
+      %td= people.name 
+      %td= people.age
+      %td= people.mail
+      %td
+        =link_to people.name , "/people/#{people.id}"

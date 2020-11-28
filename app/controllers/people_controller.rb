@@ -1,6 +1,13 @@
 class PeopleController < ApplicationController
+
   def index
     @msg = 'Person data .'
-    @data = Person.all
+    @people = Person.all
   end
+
+  def show
+    @msg = 'indexed data'
+    @findPeople = Person.find(params[:id])
+  end
+
 end

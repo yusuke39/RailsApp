@@ -61,3 +61,19 @@ gem 'rails-assets-backbone'
 
 gem 'haml-rails'
 gem 'erb2haml'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :development do
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'factory_bot_rails'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'people/index'
+  get 'people/:id', to: 'people#show'
   get 'cards/index'
   get 'cards', to: 'cards#index'
 
